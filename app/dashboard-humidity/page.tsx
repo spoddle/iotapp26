@@ -95,12 +95,10 @@ export default function DashboardHumidity() {
               key={index}
               className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded shadow-md"
               role="alert">
-              <p className="font-bold">
-                ⚠️ {alert.message}
-              </p>
+              <p className="font-bold">⚠️ {alert.message}</p>
               <p className="text-sm">
                 Sensor: {alert.sensorName} | Time:{" "}
-                {new Date(alert.timestamp).toLocaleDateString("uk-UA")}
+                {new Date(alert.timestamp).toLocaleTimeString("uk-UA")}
               </p>
             </div>
             ))}
